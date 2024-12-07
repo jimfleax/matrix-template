@@ -1,0 +1,458 @@
+/*
+    Author: Reetabrata Bhandari
+    (C) 2021 RB TECH. All Rights Reserved.
+*/
+html {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color emoji;
+    background: linear-gradient(190deg, #000626, #000e5e, #001729, #0f0033, #1c004e, #130029);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: -webkit-fill-available;
+    counter-reset: auto;
+    -webkit-tap-highlight-color: #00000059;
+    -webkit-app-region: no-drag;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: 1s;
+}
+
+#container {
+    background: #000000;
+    color: #0000;
+    margin: 0;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-radius: inherit;
+    height: 100%;
+    background: url('file:///C:/Users/Reetabrata%20new/Pictures/Saved%20Pictures/IMG_20210404_232547_020.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    transition: 800ms;
+}
+
+#reetCover {
+    width: 62em;
+    height: fit-content;
+    font-size: 1.2em;
+    padding-block: 2em; font-weight: 400;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    transition: 1s;
+}
+
+#reetCover > img {
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+    margin: auto;
+    visibility: hidden !important;
+    opacity: 0;
+    display: none;
+}
+
+#reetCover > div > h1 {
+    color: #999999;
+    font-family: tahoma;
+    font-weight: 1;
+    font-size: 3em;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#navContent {
+    position: absolute;
+    right: 0;
+    display: flex;
+    color: #fff;
+    width: 34em;
+    padding: 1em;
+    margin: auto;
+    margin-right: 9em;
+    padding-top: 1.5em;
+    font-family: arial;
+}
+
+#navContent > a {
+    margin: auto;
+    width: fit-content;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #828282;
+    cursor: pointer;
+}
+
+#mainContainer {
+    color: #d7d7d7;
+    display: none;
+}
+
+#about {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-left: 7em;
+}
+
+c {
+    color: seagreen;
+    font-style: italic;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(10px)
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
+
+@font-face {
+    font-family: icon;
+    src: url('icomoon.ttf');
+}
+
+.fbIcon::before {
+    content: "\e925";
+}
+
+.instaIcon::before {
+    content: "\e958";
+}
+
+.tweetIcon::before {
+    content: "\e938";
+}
+
+#social {
+    font-family: icon !important;
+    text-shadow: 0 0 5px #0000001f;
+    display: flex;
+    flex-direction: column;
+    width: 4em;
+    height: 12em;
+    margin: auto;
+    position: absolute;
+    right: 32px;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    color: seagreen;
+    font-size: 1.3em;
+    background: #151515;
+    background: #ffffff14;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    padding-block: 0.5em; opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.fbIcon:hover {
+    transform: scale(1.2);
+}
+
+.instaIcon:hover {
+    transform: scale(1.2);
+}
+
+.tweetIcon:hover {
+    transform: scale(1.2);
+}
+
+.fbIcon:active {
+    transform: scale(1.1);
+}
+
+.instaIcon:active {
+    transform: scale(1.1);
+}
+
+.tweetIcon:active {
+    transform: scale(1.1);
+}
+
+span.fbIcon {
+    transition: 300ms;
+}
+
+span.instaIcon {
+    transition: 300ms;
+}
+
+span.tweetIcon {
+    transition: 300ms;
+}
+
+#container::-webkit-scrollbar {
+    width: 10px;
+    background: #ffffff0d;
+}
+
+#container::-webkit-scrollbar-button {
+}
+
+#container::-webkit-scrollbar-track {
+}
+
+#container::-webkit-scrollbar-thumb {
+    background: #1B5E20;
+    border-radius: 5em;
+}
+
+#scrollbar-ui {
+    position: absolute;
+    background: #fff;
+    width: 10px;
+    height: max-content;
+    border-radius: 2em;
+    overflow: auto;
+}
+
+#app {
+    margin: 2em;
+    border-radius: 5em;
+    box-shadow: 2px 2px 20px black;
+    height: 91%;
+    background: #000;
+}
+
+a {
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+d {
+    color: seagreen;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 17em;
+    margin: 3em;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#flexbox > h2 {
+    margin: 1em !important;
+}
+
+#reetCover > p {
+}
+
+#reetCover > div:nth-child(2) > p {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#reetCover > div:nth-child(2) > h2 {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#works {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-left: 7em;
+}
+
+ul > li {
+    color: #999999;
+    margin-block: 1em; font-size: 1.2em;
+}
+
+li::marker {
+    color: seagreen;
+}
+
+#contact {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-right: 17em;
+}
+
+#contact > h1 {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#contact > p {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+#what-i-do > p {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.MuiLinearProgress-root.MuiLinearProgress-colorPrimary.MuiLinearProgress-determinate {
+    transition: 1s;
+}
+
+#navContent > a {
+    padding: 10px;
+    transition: 300ms;
+}
+
+#navContent > a:hover {
+    background: #ffffff3d;
+    border-radius: 1em;
+}
+
+#navContent > a:active {
+    background: #ffffff4d;
+}
+
+#navContent > a:focus {
+    outline: none;
+}
+
+#pagebar {
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: auto;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+#pagebar > div {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: auto;
+    margin-inline: 4px;
+    transition: 400ms;
+}
+
+#arrowleft::before {
+    content: "\f0d9";
+}
+
+#arrowright::before {
+    content: "\f0da";
+}
+
+#arrowright {font-family: 'icon';font-size: 36px;color: #567458;width: fit-content;height: fit-content;margin: auto;display: block;margin-inline: 6px;cursor: pointer;transition: 400ms;}
+
+#arrowleft {
+    font-family: 'icon';
+    font-size: 36px;
+    color: #567458;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: block;
+    margin-inline: 6px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#msg {
+    display: flex;
+    position: fixed;
+    font-family: segoe ui;
+    font-weight: 200;
+    top: auto;
+    bottom: 7%;
+    left: auto;
+    right: auto;
+    background: linear-gradient(155deg, #101010, #101010, #1a1a1a);
+    color: #ffffff78;
+    border-radius: 20px;
+    padding: 0;
+    padding-inline: 3em;
+    box-shadow: 1px 1px 15px -6px #434343;
+    transition: 400ms;
+    /* display: none; */
+}
+
+#msg {}
+
+#msg > span {
+}
+
+#arrowleft:hover {
+    filter: brightness(1.5);
+}
+
+#arrowright:hover {
+    filter: brightness(1.5);
+}
+
+#pagebar > div:hover {
+    filter: brightness(1.5);
+}
