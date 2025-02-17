@@ -10,3 +10,5 @@ This template can be further enhanced using modern web technologies like:
 - **State management** tools like Redux or Context API.
 - **Tailwind CSS** for faster and more flexible styling.
 - **Node.js** or other back-end frameworks for database connectivity.
+
+# I have currently stopped working on this
